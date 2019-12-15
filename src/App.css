@@ -1,0 +1,29 @@
+.app {
+  /* when multiple tweets are combined the bottom half of the bg can be white */
+  /* using min-height of 100 resolves this */
+  min-height: 100vh;
+
+  background: rgb(69, 187, 226);
+
+  /* by default the tweets are ordered under each other */
+  /* flew will cause tweets to be placed side by side on the same row */
+  display: flex;
+
+  /* each tweet/element will now having spacing between them */
+  /* without this all elements will touch */
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+.tweet {
+  height: 300px;
+  width: 300px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
